@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>오딘: 발할라 라이징 - 전국 프라이빗 길드룸 정모 지원 이벤트 결과보고서</title>
+    <!-- Google Fonts & Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Cinzel:wght@600;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        odin: {
+                            gold: '#D4AF37',
+                            lightgold: '#F3E5AB',
+                            dark: '#0B0D12',
+                            card: '#131722',
+                            cardhover: '#1B2130',
+                            border: '#2A324B',
+                            red: '#E53E3E'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                        cinzel: ['Cinzel', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #07080B;
+            color: #E2E8F0;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF5C0 0%, #D4AF37 50%, #AA7C11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.15);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-16">
+
+    <!-- 헤더 / 타이틀 영역 -->
+    <header class="border-b border-odin-border/60 bg-odin-card/80 backdrop-blur py-8 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center space-x-4">
+                <div class="w-3 h-8 bg-odin-gold rounded-full shadow-[0_0_10px_#D4AF37]"></div>
+                <div>
+                    <span class="text-xs font-bold text-odin-gold tracking-widest font-cinzel block uppercase">Odin: Valhalla Rising</span>
+                    <h1 class="text-2xl md:text-3xl font-black text-white tracking-tight">전국 프라이빗 길드룸 정모 지원 이벤트 결과보고서</h1>
+                </div>
+            </div>
+            <div class="text-xs text-slate-400 bg-odin-dark/80 px-4 py-2 rounded-lg border border-odin-border">
+                정모 진행 기간: <span class="text-odin-lightgold font-bold">2026.10.02(금) ~ 10.18(일)</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 mt-8 space-y-10">
+
+        <!-- 1. [최상단] 정모 스케치 영상 (제작 완료 태그 삭제됨) -->
+        <section class="space-y-4">
+            <div class="flex items-center justify-between">
+                <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                    <span class="text-odin-gold">🎬</span> 정모 스케치 영상
+                </h2>
+            </div>
+            
+            <div class="bg-odin-card p-4 rounded-xl border border-odin-border gold-border-glow">
+                <div class="aspect-video w-full bg-black rounded-lg overflow-hidden relative flex items-center justify-center">
+                 <video class="w-full h-full object-cover" controls poster="thumbnail.jpg">
+    <source src="sketch_video.mp4" type="video/mp4">
+    브라우저가 비디오 태그를 지원하지 않습니다.
+</video>
+                </div>
+                <p class="text-xs text-slate-400 mt-3 text-center">
+                    ※ 본 촬영은 사전 초상권 활용 동의를 완료한 길드에 한해 진행되었습니다. 
+                </p>
+            </div>
+        </section>
+
+        <!-- 2. 이벤트 성과 및 주요 지표 -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                <span class="text-odin-gold">📊</span> 이벤트 결과 <span class="text-xs font-normal text-slate-400"> </span>
+            </h2>
+
+            <!-- 균일한 높이의 3개 핵심 지표 카드 -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-stretch">
+                <!-- 총 신청자 수 -->
+                <div class="bg-odin-card p-6 rounded-xl border border-odin-border flex flex-col justify-between h-full">
+                    <span class="text-sm text-slate-400 font-medium">총 신청자 수</span>
+                    <div class="my-auto py-2">
+                        <span class="text-4xl font-black text-white">830</span> <span class="text-lg text-odin-gold font-bold">명</span>
+                        <p class="text-xs text-slate-400 mt-1">(개인정보 동의 775명)</p>
+                    </div>
+                </div>
+
+                <!-- 참여 길드 수 -->
+                <div class="bg-odin-card p-6 rounded-xl border border-odin-border flex flex-col justify-between h-full">
+                    <span class="text-sm text-slate-400 font-medium">참여 길드 수</span>
+                    <div class="my-auto py-2">
+                        <span class="text-4xl font-black text-white">616</span> <span class="text-lg text-odin-gold font-bold">개</span>
+                        <p class="text-xs text-slate-400 mt-1">(중복 신청 제외)</p>
+                    </div>
+                </div>
+
+                <!-- 최종 당첨 & 참석 길드 -->
+                <div class="bg-odin-card p-6 rounded-xl gold-border-glow bg-gradient-to-br from-odin-card to-odin-cardhover flex flex-col justify-between h-full">
+                    <span class="text-sm text-odin-lightgold font-medium">최종 당첨 & 참석 길드</span>
+                    <div class="my-auto py-2">
+                        <div class="flex items-baseline gap-2">
+                            <span class="text-2xl font-bold text-slate-400 line-through">25팀</span>
+                            <span class="text-3xl font-black gold-gradient-text">➔ 22팀 참석</span>
+                        </div>
+                        <p class="text-xs text-odin-gold mt-1">(전서버 상위 200위이내 길드 비율 80%)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 표 밖으로 분리된 참석 현황 안내 문구 -->
+            <div class="bg-odin-card/60 px-4 py-3 rounded-lg border border-odin-border/80 text-xs text-slate-300 flex items-center gap-2">
+                <span class="text-odin-gold text-base">ℹ️</span>
+                <span>최초 25개 길드가 선정되었으나, 3개 길드가 참석 인원 미달 및 내부 사정으로 취소를 요청함에 따라 최종 22개 길드의 정모가 안전하게 진행되었습니다.</span>
+            </div>
+
+
+            </div>
+        </section>
+
+        <!-- 3. 신청률 상승 요인 분석 & 인사이트 요약 -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                <span class="text-odin-gold">💡</span> 인사이트 요약
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="bg-odin-card p-5 rounded-xl border border-odin-border space-y-2">
+                    <h3 class="text-odin-gold font-bold text-base">1) 절차 간소화 및 비공개성 확보</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        카페 게시글 작성 방식 대신 구글 폼 다이렉트 신청을 통해 길드 정보 노출 부담 및 참여 문턱 단축
+                    </p>
+                </div>
+                <div class="bg-odin-card p-5 rounded-xl border border-odin-border space-y-2">
+                    <h3 class="text-odin-gold font-bold text-base">2) 프라이빗 공간 지원 (장벽 완화)</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        파티룸 대관 혜택 제공으로 자녀 동반 유저 참석 부담을 해소하였으며, 실제 사연을 통해 높은 긍정 반응 확인
+                    </p>
+                </div>
+                <div class="bg-odin-card p-5 rounded-xl border border-odin-border space-y-2">
+                    <h3 class="text-odin-gold font-bold text-base">3) 운영 인사이트</h3>
+                    <ul class="text-xs text-slate-300 leading-relaxed space-y-1 list-disc list-inside">
+                        <li>첫번째 길드 정모 현장 방문 시, 비식용 케이크에 대한 아쉬움이 확인되어, 이후 길드 방문 시 케이크·음료 추가 지원을 통한 만족도 극대화</li>
+                        <li>비프랜차이즈 파티룸 특성상 지역별 시설 컨디션 격차 및 관리의 어려움이 발생하여, 차기 행사 시 지정 식당 연계 지원 방식으로 변경 검토</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 전국 길드룸 정모 현황 -->
+        <section class="space-y-4">
+            <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                <span class="text-odin-gold">📍</span> 전국 22개 파티룸 정모 현장 리스트
+            </h2>
+
+            <div class="bg-odin-card rounded-xl border border-odin-border overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm text-left text-slate-300">
+                        <thead class="text-xs uppercase bg-odin-dark/90 text-odin-gold border-b border-odin-border">
+                            <tr>
+                                <th scope="col" class="px-4 py-3 text-center">NO</th>
+                                <th scope="col" class="px-4 py-3">날짜</th>
+                                <th scope="col" class="px-4 py-3">길드명</th>
+                                <th scope="col" class="px-4 py-3">지역</th>
+                                <th scope="col" class="px-4 py-3 text-center">참석인원</th>
+                                <th scope="col" class="px-4 py-3">진행 장소</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-odin-border/50 text-xs">
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">1</td>
+                                <td class="px-4 py-3">10/2(금)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">좋은날</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">강남</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">강남 생텀 2호점</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">2</td>
+                                <td class="px-4 py-3">10/2(금)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">오쿠오쿠</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">영등포</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">10명</td>
+                                <td class="px-4 py-3 text-slate-300">영등포 우비공</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">3</td>
+                                <td class="px-4 py-3">10/3(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">이농궁</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">성수</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">어반아지트 건대점</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">4</td>
+                                <td class="px-4 py-3">10/3(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">부흥</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">성수</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">더 룸 성수</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">5</td>
+                                <td class="px-4 py-3">10/4(일)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">골렘들</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">신림</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">10명</td>
+                                <td class="px-4 py-3 text-slate-300">신림 오프라인</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">6</td>
+                                <td class="px-4 py-3">10/9(금)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">낭만해운대</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">부산</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">오파인드 광안점</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">7</td>
+                                <td class="px-4 py-3">10/10(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">뽕뽕</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">강남</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">9명</td>
+                                <td class="px-4 py-3 text-slate-300">강남 홀리몰리</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">8</td>
+                                <td class="px-4 py-3">10/11(일)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">PKG</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">수원</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">10명</td>
+                                <td class="px-4 py-3 text-slate-300">수원 겜티룸</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">9</td>
+                                <td class="px-4 py-3">10/16(금)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">도도</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">광주</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">10명</td>
+                                <td class="px-4 py-3 text-slate-300">광주 지피</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">10</td>
+                                <td class="px-4 py-3">10/16(금)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">CLASS</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">강남</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">10명</td>
+                                <td class="px-4 py-3 text-slate-300">강남 생텀 2호점</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">11</td>
+                                <td class="px-4 py-3">10/16(금)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">란설</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">인천</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">부평 스페이스</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">12</td>
+                                <td class="px-4 py-3">10/16(금)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">풍백</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">수원</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">9명</td>
+                                <td class="px-4 py-3 text-slate-300">수원 겜티룸</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">13</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">전설이다연장챙겨</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">강남</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">12명</td>
+                                <td class="px-4 py-3 text-slate-300">강남 홀리몰리</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">14</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">명령하지마라</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">신림</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">16명</td>
+                                <td class="px-4 py-3 text-slate-300">퍼즈 파티룸</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">15</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">LUNATIC</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">수원</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">수원 겜지트 수원역점</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">16</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">별빛천사</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">신림</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">12명</td>
+                                <td class="px-4 py-3 text-slate-300">신림 오프라인</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">17</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">호로록</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">청주</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">17명</td>
+                                <td class="px-4 py-3 text-slate-300">파티노리</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">18</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">운뚱땡이</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">강남</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">생텀 1호점</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">19</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">샷건</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">대구</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">14명</td>
+                                <td class="px-4 py-3 text-slate-300">스테이머뭄 동대구</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">20</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">The 루나</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">영등포</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">15명</td>
+                                <td class="px-4 py-3 text-slate-300">영등포 우비공</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">21</td>
+                                <td class="px-4 py-3">10/17(토)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">오야호</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">영등포</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">25명</td>
+                                <td class="px-4 py-3 text-slate-300">우비공 문래</td>
+                            </tr>
+                            <tr class="hover:bg-odin-cardhover transition-colors">
+                                <td class="px-4 py-3 text-center text-slate-400">22</td>
+                                <td class="px-4 py-3">10/18(일)</td>
+                                <th scope="row" class="px-4 py-3 font-bold text-white">선도</th>
+                                <td class="px-4 py-3"><span class="bg-slate-800 px-2 py-0.5 rounded border border-slate-700">용인</span></td>
+                                <td class="px-4 py-3 text-center font-semibold text-odin-lightgold">13명</td>
+                                <td class="px-4 py-3 text-slate-300">용인 바로</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 푸터 -->
+    <footer class="mt-16 border-t border-odin-border/60 pt-8 text-center text-xs text-slate-400">
+        오딘: 발할라 라이징 - 전국 프라이빗 길드룸 정모 지원 이벤트 결과보고서
+    </footer>
+
+</body>
+</html>
